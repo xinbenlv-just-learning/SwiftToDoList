@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3209261943AB0E007F90BE /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3209251943AB0E007F90BE /* ToDoItem.swift */; };
 		0E8495991942E1CC0058B3AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8495981942E1CC0058B3AD /* AppDelegate.swift */; };
 		0E84959B1942E1CC0058B3AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E84959A1942E1CC0058B3AD /* Images.xcassets */; };
 		0E8495A71942E1CC0058B3AD /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8495A61942E1CC0058B3AD /* ToDoListTests.swift */; };
+		0E8495B11942E3850058B3AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8495B01942E3850058B3AD /* Main.storyboard */; };
+		0E9981E21942F0E1009E0D90 /* ZZNAddToDoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9981E11942F0E1009E0D90 /* ZZNAddToDoItemViewController.swift */; };
+		0E9981E41943A609009E0D90 /* ZZNToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9981E31943A609009E0D90 /* ZZNToDoListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,9 +24,18 @@
 			remoteGlobalIDString = 0E8495921942E1CC0058B3AD;
 			remoteInfo = ToDoList;
 		};
+		0E8495B21942E4AA0058B3AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E84958B1942E1CC0058B3AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E8495921942E1CC0058B3AD;
+			remoteInfo = ToDoList;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E3209241943A796007F90BE /* ZZNToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNToDoListTableViewController.h; sourceTree = "<group>"; };
+		0E3209251943AB0E007F90BE /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = ../ToDoItem.swift; sourceTree = "<group>"; };
 		0E8495931942E1CC0058B3AD /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8495971942E1CC0058B3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E8495981942E1CC0058B3AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +43,9 @@
 		0E8495A01942E1CC0058B3AD /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8495A51942E1CC0058B3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E8495A61942E1CC0058B3AD /* ToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
+		0E8495B01942E3850058B3AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		0E9981E11942F0E1009E0D90 /* ZZNAddToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZNAddToDoItemViewController.swift; sourceTree = "<group>"; };
+		0E9981E31943A609009E0D90 /* ZZNToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZNToDoListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,11 @@
 		0E8495951942E1CC0058B3AD /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				0E3209251943AB0E007F90BE /* ToDoItem.swift */,
+				0E3209241943A796007F90BE /* ZZNToDoListTableViewController.h */,
+				0E9981E11942F0E1009E0D90 /* ZZNAddToDoItemViewController.swift */,
+				0E8495B01942E3850058B3AD /* Main.storyboard */,
+				0E9981E31943A609009E0D90 /* ZZNToDoListTableViewController.swift */,
 				0E8495981942E1CC0058B3AD /* AppDelegate.swift */,
 				0E84959A1942E1CC0058B3AD /* Images.xcassets */,
 				0E8495961942E1CC0058B3AD /* Supporting Files */,
@@ -135,6 +156,7 @@
 			);
 			dependencies = (
 				0E8495A21942E1CC0058B3AD /* PBXTargetDependency */,
+				0E8495B31942E4AA0058B3AD /* PBXTargetDependency */,
 			);
 			name = ToDoListTests;
 			productName = ToDoListTests;
@@ -183,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E84959B1942E1CC0058B3AD /* Images.xcassets in Resources */,
+				0E8495B11942E3850058B3AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9981E41943A609009E0D90 /* ZZNToDoListTableViewController.swift in Sources */,
 				0E8495991942E1CC0058B3AD /* AppDelegate.swift in Sources */,
+				0E3209261943AB0E007F90BE /* ToDoItem.swift in Sources */,
+				0E9981E21942F0E1009E0D90 /* ZZNAddToDoItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +245,11 @@
 			isa = PBXTargetDependency;
 			target = 0E8495921942E1CC0058B3AD /* ToDoList */;
 			targetProxy = 0E8495A11942E1CC0058B3AD /* PBXContainerItemProxy */;
+		};
+		0E8495B31942E4AA0058B3AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E8495921942E1CC0058B3AD /* ToDoList */;
+			targetProxy = 0E8495B21942E4AA0058B3AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -306,6 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -317,6 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -377,6 +410,7 @@
 				0E8495AC1942E1CC0058B3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E8495AD1942E1CC0058B3AD /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +419,7 @@
 				0E8495AF1942E1CC0058B3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
